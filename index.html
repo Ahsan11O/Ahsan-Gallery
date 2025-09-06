@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome Animation -->
+    <div id="welcome">
+        <h1>Welcome to My Website!</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#about">ℹ️ About</a></li>
+            <li><a href="#gallery">🖼️ Gallery</a></li>
+            <li><a href="#contact">📞 Contact</a></li>
+            <li><a href="#login">🔑 Login</a></li>
+            <li><a href="#upload">  Upload</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This is Me <strong>Ahsan Ali</strong>.</p>
+        <p>Date of Birth: <strong>1st March, 2006</strong></p>
+        <p>Create Website On: 10/03/2025</p>
+        <p>City: Gambat</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <script>
+                for (let i = 1; i <= 40; i++) {
+                    document.write(`<div class='image-item'>
+                        <img src='images/pic${i}.jpg' alt='Image ${i}'>
+                        <a href='images/pic${i}.jpg' download>Download</a>
+                    </div>`);
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <div class="upload-container">
+        <input type="file" id="imageUpload" accept="image/*">
+        <button onclick="uploadImage()">Upload</button>
+    </div>
+
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <span onclick="togglePassword()">👁️</span>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><strong>📞 Phone:</strong> +92 316 2568572</p>
+        <p><strong>📧 Email:</strong> ahsanali78611012@gmail.com</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank">🎥 YouTube</a>
+            <a href="https://www.facebook.com/" target="_blank">📘 Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank">📸 Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank">🎵 TikTok</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>All Rights Reserved © Ahsan Ali</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
